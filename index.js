@@ -6,7 +6,10 @@ const PORT = 8001;
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", // your React frontend
+  origin: [
+    "http://localhost:5174",
+    "https://aj-electronics-frontend-1psu.vercel.app"
+  ],
   credentials: true,               // allow cookies/auth headers if needed
 }));
 
