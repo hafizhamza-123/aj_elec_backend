@@ -25,10 +25,10 @@ const paymentRoute = require("./routes/payment");
 // Import MongoDB Connection
 const { ConnectMongoDb } = require("./connect");
 
-// Initialize MongoDB
-ConnectMongoDb("mongodb://localhost:27017/ecom_app")
+ConnectMongoDb(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("MongoDB Error:", err));
+
 
 // Body parser
 app.use(express.json());
