@@ -209,7 +209,7 @@ async function requestPasswordReset(req, res) {
     );
 
     // Generate frontend reset password link
-    const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
+    const frontendUrl = process.env.FRONTEND_URL || "https://aj-electronics-frontend.vercel.app";
     const resetLink = `${frontendUrl}/reset-password/${resetToken}`;
 
     // Send the email with the frontend link

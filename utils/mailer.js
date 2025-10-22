@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 
 // Send verification email
 async function sendVerificationEmail(to, token) {
-  const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
+  const frontendUrl = process.env.FRONTEND_URL || "https://aj-electronics-frontend.vercel.app";
   const verificationUrl = `${frontendUrl}/verify-email/${encodeURIComponent(token)}`;
 
   try {
