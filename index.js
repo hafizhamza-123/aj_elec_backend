@@ -13,7 +13,7 @@ app.use(cors({
   credentials: true,
 }));
 
-// Import Routes
+//  Import Routes
 const authRoute = require("./routes/auth");
 const adminRoute = require("./routes/admin");
 const userRoutes = require("./routes/user");
