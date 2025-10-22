@@ -22,7 +22,7 @@ const ordersRoute = require("./routes/order");
 const productRoute = require("./routes/product");
 const paymentRoute = require("./routes/payment");
 
-// Import MongoDB Connection
+// Import Mongo DB Connection
 const { ConnectMongoDb } = require("./connect");
 
 ConnectMongoDb(process.env.MONGO_URI)
